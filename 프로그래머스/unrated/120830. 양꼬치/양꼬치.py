@@ -5,7 +5,7 @@ def solution(n, k):
     validateSkewer(n)
     validateBeverage(n, k)
 
-    answer = SKEWER_PRICE * n + BEVERAGE_PRICE * (k - n // 10) if (k - n // 10) > 0 else SKEWER_PRICE * n
+    answer = SKEWER_PRICE * n + BEVERAGE_PRICE * (k - n // 10)
     
     return answer
 
