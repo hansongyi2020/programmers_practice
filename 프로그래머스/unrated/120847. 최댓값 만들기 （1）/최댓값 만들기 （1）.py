@@ -2,4 +2,4 @@ from functools import reduce
 
 def solution(numbers):
     sorted_list = sorted(numbers)
-    return reduce(lambda x, y: x * y, sorted_list[-2:])
+    return sorted_list[-2] * sorted_list[-1]
